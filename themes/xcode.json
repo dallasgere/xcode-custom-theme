@@ -228,7 +228,7 @@
             "font_weight": 400
           },
           "constructor": {
-            "color": "#acf2e4",
+            "color": "#8fd4c6",
             "font_style": "normal",
             "font_weight": 400
           },
@@ -258,7 +258,7 @@
             "font_weight": 400
           },
           "enum": {
-            "color": "#acf2e4",
+            "color": "#8fd4c6",
             "font_style": "normal",
             "font_weight": 400
           },
@@ -393,7 +393,7 @@
             "font_weight": 400
           },
           "namespace": {
-            "color": "#acf2e4",
+            "color": "#8fd4c6",
             "font_style": "normal",
             "font_weight": 400
           },
@@ -523,7 +523,7 @@
             "font_weight": 400
           },
           "type": {
-            "color": "#acf2e4",
+            "color": "#8fd4c6",
             "font_style": "normal",
             "font_weight": 400
           },
@@ -533,12 +533,12 @@
             "font_weight": 400
           },
           "type.interface": {
-            "color": "#acf2e4",
+            "color": "#8fd4c6",
             "font_style": "normal",
             "font_weight": 400
           },
           "type.parameter": {
-            "color": "#acf2e4",
+            "color": "#8fd4c6",
             "font_style": "normal",
             "font_weight": 400
           },

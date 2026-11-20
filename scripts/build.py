@@ -57,7 +57,7 @@ XCODE = {
     "attribute": "#cc9768",
     "type_declaration": "#6bdfff",
     "declaration": "#5fbcd6",
-    "project_type": "#acf2e4",
+    "project_type": "#8fd4c6",  # Xcode #acf2e4, toned down to match the palette's lightness
     "project_member": "#86cdbf",
     "sdk_type": "#dabaff",
     "sdk_function": "#c39af2",
