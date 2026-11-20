@@ -1,0 +1,7 @@
+id = "dallas-xcode-theme"
+name = "Dallas Xcode Theme"
+version = "1.0.0"
+schema_version = 1
+authors = ["Dallas Gere"]
+description = "Xcode's classic Default (Dark) palette for Zed."
+repository = "https://github.com/dallasgere/dallas-xcode-theme"
