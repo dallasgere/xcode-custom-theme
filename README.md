@@ -1,4 +1,4 @@
-# Dallas Xcode Theme
+# Xcode Custom Theme
 
 Xcode theme for zed with some changes to git status colors and slightly altered syntax highlighting to make it more appealing for me
 
