@@ -159,7 +159,7 @@ PALETTES = {
     # ../vine source; this adds Zed-only role colors and the macOS frame.
     "xcode-26-dark": {
         "file": "xcode",
-        "name": "Xcode",
+        "name": "Xcode Custom",
         "chroma": 1.0,  # keep Xcode's pastels exactly
         # Soft graphite surfaces close to real Xcode (#292a30), a step darker, with a
         # shell only slightly below the editor so the frame doesn't glare against the code.

@@ -6,7 +6,7 @@ Xcode theme for zed with some changes to git status colors and slightly altered 
 
 1. In Zed, open the command palette and run `zed: install dev extension`.
 2. Select this folder.
-3. Run `theme selector: toggle` and pick `Xcode`.
+3. Run `theme selector: toggle` and pick `Xcode Custom`.
 
 Or copy the files in `themes/` into `~/.config/zed/themes/`.
 
