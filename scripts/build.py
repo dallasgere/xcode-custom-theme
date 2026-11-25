@@ -771,8 +771,8 @@ def build_style(theme, palette=None):
         "background": shell_bg,
         "border": divider,
         "border.variant": divider,
-        "border.focused": accent,
-        "border.selected": accent,
+        "border.focused": TRANSPARENT,
+        "border.selected": TRANSPARENT,
         "border.transparent": TRANSPARENT,
         "border.disabled": divider,
         "elevated_surface.background": g("editorWidget.background", "menu.background"),
@@ -956,7 +956,7 @@ def sharpen(style, palette=None):
         style["text.accent"] = lift_to(style["text.accent"], shell, EDGE_TEXT_MUTED_MIN)
 
     # Rows: hover lifts, selection carries the accent.
-    accent = style.get("border.focused", text)
+    accent = style.get("icon.accent", text)
     hover = shift(shell, edge.get("hover_lift", EDGE_HOVER_LIFT))
     selected = mix(shift(shell, edge.get("selected_lift", EDGE_HOVER_LIFT)), accent, edge.get("selected_tint", EDGE_SELECTED_TINT))
     while contrast(style["text"], selected) < edge.get("selected_text", EDGE_SELECTED_TEXT):  # labels stay crisp on it
