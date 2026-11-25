@@ -1006,11 +1006,38 @@ def main():
             write(config.get("file", palette), theme, config)
 
 
+
+def unbordered_style(style):
+    """Return a seamless, borderless variant of a built Zed style."""
+    ed = style["editor.background"]
+    elev = style.get("elevated_surface.background", ed)
+    out = dict(style)
+    for k in (
+        "background", "panel.background", "surface.background",
+        "status_bar.background", "title_bar.background", "title_bar.inactive_background",
+        "tab_bar.background", "tab.inactive_background", "toolbar.background",
+    ):
+        out[k] = ed
+    out["tab.active_background"] = elev
+    for k in (
+        "border", "border.variant", "border.disabled", "border.focused",
+        "border.selected", "pane_group.border", "pane.focused_border", "panel.focused_border",
+    ):
+        out[k] = TRANSPARENT
+    return out
+
+
 def write(palette, theme, config):
-    base = {"name": theme["name"], "appearance": theme.get("type", "dark"), "style": build_style(theme, config)}
-    family = {"$schema": SCHEMA, "name": theme["name"], "author": AUTHOR, "themes": [base]}
+    style = build_style(theme, config)
+    appearance = theme.get("type", "dark")
+    themes = [
+        {"name": theme["name"], "appearance": appearance, "style": style},
+        {"name": f"{theme['name']} Unbordered", "appearance": appearance, "style": unbordered_style(style)},
+    ]
+    family = {"$schema": SCHEMA, "name": theme["name"], "author": AUTHOR, "themes": themes}
     (OUT / f"{palette}.json").write_text(json.dumps(family, indent=2, ensure_ascii=False) + "\n")
-    print(f"themes/{palette}.json: {theme['name']}")
+    for t in themes:
+        print(f"themes/{palette}.json: {t['name']}")
 
 
 if __name__ == "__main__":
