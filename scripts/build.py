@@ -808,7 +808,7 @@ def build_style(theme, palette=None):
         "search.match_background": g("editor.findMatchHighlightBackground"),
         "search.active_match_background": g("editor.findMatchBackground"),
         "panel.background": g("sideBar.background"),
-        "panel.focused_border": accent,
+        "panel.focused_border": TRANSPARENT,
         "panel.indent_guide": g("tree.indentGuidesStroke", "editorIndentGuide.background1"),
         "panel.indent_guide_active": g("editorIndentGuide.activeBackground1"),
         "panel.indent_guide_hover": g("editorIndentGuide.activeBackground1"),
