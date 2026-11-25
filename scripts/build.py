@@ -105,7 +105,7 @@ XCODE_GIT = {
     "conflict": "#e8955a",  # Xcode's preprocessor orange, eased back
     "ignored": "#7f8c98",  # Xcode's own comment gray
     # Gutter bars.
-    **{f"gutter_{k}": blend(c, XCODE_GIT_DIM, "#1b1d22") for k, c in {
+    **{f"gutter_{k}": blend(c, XCODE_GIT_DIM, "#1e2025") for k, c in {
         "added": XCODE["project_member"],
         "modified": XCODE["declaration"],  # Xcode's declaration blue
         "deleted": XCODE["string"],
@@ -164,23 +164,23 @@ PALETTES = {
         # Soft graphite surfaces close to real Xcode (#292a30), a step darker, with a
         # shell only slightly below the editor so the frame doesn't glare against the code.
         "colors": {
-            "titleBar.activeBackground": "#16181d",
-            "titleBar.inactiveBackground": "#16181d",
-            "sideBar.background": "#16181d",
-            "statusBar.background": "#16181d",
-            "editorGroupHeader.tabsBackground": "#16181d",
-            "tab.inactiveBackground": "#16181d",
+            "titleBar.activeBackground": "#191b20",
+            "titleBar.inactiveBackground": "#191b20",
+            "sideBar.background": "#191b20",
+            "statusBar.background": "#191b20",
+            "editorGroupHeader.tabsBackground": "#191b20",
+            "tab.inactiveBackground": "#191b20",
             "editor.foreground": XCODE["plain"],
-            "editor.background": "#1b1d22",
-            "tab.activeBackground": "#1b1d22",
-            "editor.lineHighlightBackground": "#22242a",
-            "editorWidget.background": "#24262c",
-            "menu.background": "#24262c",
-            "input.background": "#24262c",
-            "editorInlayHint.background": "#24262c",
-            "tree.indentGuidesStroke": "#292b31",
-            "editorIndentGuide.background1": "#292b31",
-            "editor.selectionBackground": "#2e3545",
+            "editor.background": "#1e2025",
+            "tab.activeBackground": "#1e2025",
+            "editor.lineHighlightBackground": "#25272d",
+            "editorWidget.background": "#27292f",
+            "menu.background": "#27292f",
+            "input.background": "#27292f",
+            "editorInlayHint.background": "#27292f",
+            "tree.indentGuidesStroke": "#2c2e34",
+            "editorIndentGuide.background1": "#2c2e34",
+            "editor.selectionBackground": "#313949",
         },
         # Source control with VS Code's roles (distinct added, changed and deleted
         # colors) in Xcode's shades; see XCODE_GIT.
