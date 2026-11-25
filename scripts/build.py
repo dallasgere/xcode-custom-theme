@@ -886,7 +886,7 @@ def build_style(theme, palette=None):
     style["version_control.ignored"] = g("gitDecoration.ignoredResourceForeground")
 
     selection = g("editor.selectionBackground")
-    cursor = g("editorCursor.foreground")
+    cursor = "#ffffff"
     player_colors = [accent] + [
         g(f"terminal.ansi{n}") for n in ("Blue", "Magenta", "Yellow", "Green", "Cyan", "Red")
     ]
