@@ -927,7 +927,7 @@ def visible_invisible(fg, selection, editor_bg):
     sel = selection or editor_bg
     if len(sel) == 9:
         sel = _mix(sel[:7], int(sel[7:9], 16) / 255, editor_bg[:7])
-    return _mix(fg[:7], 0.34, sel[:7])
+    return _mix(fg[:7], 0.42, sel[:7])
 
 
 def sharpen(style, palette=None):
