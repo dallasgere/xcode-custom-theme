@@ -96,7 +96,7 @@ def blend(fg, alpha, bg):
 
 # VS Code's git color roles (green added, yellow changed, red deleted, blue
 # changed bar in the gutter) in shades taken from Xcode's own palette.
-XCODE_GIT_DIM = 0.65  # gutter bars: this much of the color over the editor, muted like VS Code's
+XCODE_GIT_DIM = 0.92  # gutter bars: this much of the color over the editor, muted like VS Code's
 XCODE_GIT = {
     # Explorer and tab labels.
     "added": XCODE["project_member"],  # Xcode's mint green
@@ -191,7 +191,7 @@ PALETTES = {
                    "deleted": XCODE_GIT["deleted"], "renamed": XCODE_GIT["added"],
                    "conflict": XCODE_GIT["conflict"], "ignored": XCODE_GIT["ignored"],
                }.items()
-               for suffix, a in (("", None), (".background", "1f"), (".border", "66"))},
+               for suffix, a in (("", None), (".background", "2e"), (".border", "66"))},
             "success": XCODE_GIT["added"],
             "version_control.added": XCODE_GIT["gutter_added"],
             "version_control.modified": XCODE_GIT["gutter_modified"],
@@ -199,8 +199,8 @@ PALETTES = {
             "version_control.renamed": XCODE_GIT["gutter_modified"],
             "version_control.conflict": XCODE_GIT["conflict"],
             "version_control.ignored": XCODE_GIT["ignored"],
-            "version_control.word_added": XCODE_GIT["gutter_added"] + "47",
-            "version_control.word_deleted": XCODE_GIT["gutter_deleted"] + "47",
+            "version_control.word_added": XCODE_GIT["gutter_added"] + "5c",
+            "version_control.word_deleted": XCODE_GIT["gutter_deleted"] + "5c",
         },
         "edge": {"border": 1.32, "border_variant": 1.15, "selected_lift": 0.1, "selected_tint": 0.06, "shell_drop": 0.02},
         "syntax": {

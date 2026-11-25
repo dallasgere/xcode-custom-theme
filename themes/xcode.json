@@ -119,22 +119,22 @@
         "success.background": "#86cdbf1a",
         "success.border": "#86cdbf66",
         "created": "#86cdbf",
-        "created.background": "#86cdbf1f",
+        "created.background": "#86cdbf2e",
         "created.border": "#86cdbf66",
         "modified": "#d9c97c",
-        "modified.background": "#d9c97c1f",
+        "modified.background": "#d9c97c2e",
         "modified.border": "#d9c97c66",
         "deleted": "#e8786a",
-        "deleted.background": "#e8786a1f",
+        "deleted.background": "#e8786a2e",
         "deleted.border": "#e8786a66",
         "renamed": "#86cdbf",
-        "renamed.background": "#86cdbf1f",
+        "renamed.background": "#86cdbf2e",
         "renamed.border": "#86cdbf66",
         "conflict": "#e8955a",
-        "conflict.background": "#e8955a1f",
+        "conflict.background": "#e8955a2e",
         "conflict.border": "#e8955a66",
         "ignored": "#7f8c98",
-        "ignored.background": "#7f8c981f",
+        "ignored.background": "#7f8c982e",
         "ignored.border": "#7f8c9866",
         "hidden": "#767682",
         "hidden.background": "#7676821a",
@@ -145,10 +145,10 @@
         "predictive": "#7f8c98",
         "predictive.background": "#7f8c981a",
         "predictive.border": "#7f8c9866",
-        "version_control.added": "#618f88",
-        "version_control.modified": "#478497",
-        "version_control.deleted": "#af5e55",
-        "version_control.renamed": "#478497",
+        "version_control.added": "#7dbfb2",
+        "version_control.modified": "#5aafc8",
+        "version_control.deleted": "#ed796a",
+        "version_control.renamed": "#5aafc8",
         "version_control.conflict": "#e8955a",
         "version_control.ignored": "#7f8c98",
         "players": [
@@ -568,8 +568,8 @@
             "font_weight": 400
           }
         },
-        "version_control.word_added": "#618f8847",
-        "version_control.word_deleted": "#af5e5547"
+        "version_control.word_added": "#7dbfb25c",
+        "version_control.word_deleted": "#ed796a5c"
       }
     }
   ]
