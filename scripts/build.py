@@ -917,6 +917,19 @@ def build_style(theme, palette=None):
     return sharpen(style, palette)
 
 
+
+def visible_invisible(fg, selection, editor_bg):
+    """Compute editor.invisible so whitespace dots stay clearly legible over selected text."""
+    def _mix(a, t, b):
+        ca = [int(a[i : i + 2], 16) for i in (1, 3, 5)]
+        cb = [int(b[i : i + 2], 16) for i in (1, 3, 5)]
+        return "#" + "".join(f"{round(x * t + y * (1 - t)):02x}" for x, y in zip(ca, cb))
+    sel = selection or editor_bg
+    if len(sel) == 9:
+        sel = _mix(sel[:7], int(sel[7:9], 16) / 255, editor_bg[:7])
+    return _mix(fg[:7], 0.34, sel[:7])
+
+
 def sharpen(style, palette=None):
     """Add depth and hierarchy: darker shell, crisp dividers, tinted selection,
     quieter gutter, richer syntax. Every text color is held to a contrast floor."""
@@ -984,6 +997,10 @@ def sharpen(style, palette=None):
             entry["color"] = lift_to(entry["color"], editor_bg, EDGE_COMMENT)
         elif key not in ("hint", "predictive"):
             entry["color"] = lift_to(entry["color"], editor_bg, EDGE_SYNTAX_MIN, chroma)
+
+    # Whitespace dots: clearly readable over selected text without competing with code.
+    sel = style["players"][0]["selection"] if style.get("players") else editor_bg
+    style["editor.invisible"] = visible_invisible(text, sel, editor_bg)
 
     return style
 
